@@ -78,7 +78,7 @@ class Masking(Layer):
         return input_shape
 
 
-class Dropout2(Layer):
+class Dropout(Layer):
     """Applies Dropout to the input.
 
     Dropout consists in randomly setting
