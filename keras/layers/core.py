@@ -105,7 +105,8 @@ class Dropout(Layer):
         self.rate = min(1., max(0., rate))
         self.noise_shape = noise_shape
         self.seed = seed
-
+        self.supports_masking = True
+        
     def _get_noise_shape(self, inputs):
         if self.noise_shape is None:
             return self.noise_shape
